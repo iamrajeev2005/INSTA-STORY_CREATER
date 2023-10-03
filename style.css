@@ -1,0 +1,209 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background: #f09433; 
+        background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+.container{
+    height: 90vh;
+    width: 335px;
+    background-color: white;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+}
+.container .nav-top{
+    height: 23px;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container .nav-top #time{
+    padding-left: 15px;
+    padding-top: 5px;
+    font-size: 1.1vw;
+    font-weight: 600;
+}
+.container .nav-top #battery{
+    padding-right: 15px;
+    padding-top: 5px;
+}
+.container .nav-top #battery img{
+    height: 20px;
+    width: 20px;
+}
+.container .nav-bottom{
+    height: 30px;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 5px;
+    margin-top: 12px;
+}
+.container .nav-bottom #logo img{
+    height: 50px;
+    width: 120px;
+    padding-top: 10px;
+}
+.container .nav-bottom #icons img{
+    height:23px;
+    width: 22px;
+    padding-top: 3px;
+}
+.fullscreen{
+    height: 100%;
+    width: 100%;
+   background-position: center;
+   background-size: cover;
+    position: absolute;
+    display: none;
+}
+.storybox{
+    height: 100px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: auto;
+    overflow-y: hidden;
+    /* background-color: aqua; */
+    padding: 15px;
+    border-bottom: 1px solid #555;
+}
+.storybox::-webkit-scrollbar{
+    display: none;
+}
+.storybox #story{
+    /* position: relative; */
+    margin-right: 5px;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    display: inline-block;
+    /* background-color: green; */
+    background: linear-gradient(rgb(255, 191, 14),blue,rgb(255, 47, 82),purple,orange);
+    padding: 2px;
+    overflow: hidden;
+}
+.storybox #story img{
+    /* position: absolute; */
+    /* left: 50%;
+    top: 50%; */
+    background-size: cover;
+    background-position: center;
+    /* transform: translate(-50%,-50%); */
+    height: 66px;
+    width: 66px;
+    border-radius: 50%;
+    object-fit: cover;
+   
+}
+.username{
+    height: 33px;
+    width: 100%;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.username #circle{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding-left: 5px;
+}
+.username #circle img{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.username #circle h3{
+    font-size: .9vw;
+}
+.username #menu img{
+    height: 20px;
+    width: 20px;
+    padding-right: 5px;
+}
+.post{
+    height: 300px;
+    width: 100%;
+    /* background-color: black; */
+}
+.post img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+.share{
+    height: 35px;
+    width: 100%;
+    /* background-color: maroon; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.share img{
+    height: 20px;
+    width: 30px;
+    padding: 0px 5px;
+}
+.liked{
+    height: 25px;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    padding: 0px 15px;
+    gap: 7px;
+    /* position: relative; */
+}
+.liked #images{
+    display: flex;
+    align-items: center;
+}
+.liked #images #first{
+    /* position: absolute; */
+    left: 2px;
+}
+.liked img{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid black;
+}
+.liked #written{
+    font-size: .6vw;
+}
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line{
+    border-radius: 100px;
+    height: 7px;
+    width: 45%;
+    background-color: #555;
+    margin-bottom: -22px;
+}
