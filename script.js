@@ -20,6 +20,9 @@ arr.forEach(function(elem,idx){
 </div>`
 
 })
+
+var grow = 0
+
 document.querySelector(".storybox").innerHTML = clutter
 document.querySelector(".storybox").addEventListener("click",function(dets){
     document.querySelector(".fullscreen").style.display = "block"
@@ -27,5 +30,14 @@ document.querySelector(".storybox").addEventListener("click",function(dets){
 
     setTimeout(function(){
         document.querySelector(".fullscreen").style.display = "none"
-    },1000)
+    },3000)
+
+   if(grow<100){
+    setInterval(function(){
+        document.querySelector("#growth").style.width = `${grow}%`
+        grow++
+    },30)
+   }else{
+    grow = 0
+   };
 });
